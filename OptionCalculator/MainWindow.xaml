@@ -1,0 +1,70 @@
+﻿<Window x:Class="OptionCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Option Calculator" Height="450" Width="700" ResizeMode="CanMinimize" Icon="Resources/options.png">
+    <Grid Background="Gainsboro">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="5" />
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2" />
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2" />
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="5" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="5" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="15" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+        
+        <ComboBox x:Name="AssetComboBox" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Text="Select underlying assets ..." IsEditable="True" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="14" IsReadOnly="True" />
+        <Label x:Name="SpotPriceLabel" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" FontSize="14" HorizontalAlignment="Right" Content="Spot Price: " />
+        <TextBox x:Name="SpotPriceTextBox" Grid.Row="3" Grid.Column="3" VerticalAlignment="Center" FontSize="14" HorizontalAlignment="Stretch"/>
+        <Label x:Name="VolatilityLabel" Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" FontSize="14" HorizontalAlignment="Right" Content="Volatility: " />
+        <TextBox x:Name="VolatilityTextBox" Grid.Row="5" Grid.Column="3" VerticalAlignment="Center" FontSize="14" HorizontalAlignment="Stretch"/>
+        <Label x:Name="InterestRateLabel" Grid.Row="7" Grid.Column="1" VerticalAlignment="Center" FontSize="14" HorizontalAlignment="Right" Content="Interest Rate: " />
+        <TextBox x:Name="InterestRateTextBox" Grid.Row="7" Grid.Column="3" VerticalAlignment="Center" FontSize="14" HorizontalAlignment="Stretch"/>
+        
+        <ComboBox x:Name="MethodComboBox" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="3" Text="Select method ..." IsEditable="True" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="13" IsReadOnly="True" SelectionChanged="MethodComboBox_SelectionChanged" />
+        <Label x:Name="PeriodLabel" Grid.Row="11" Grid.Column="1" VerticalAlignment="Center" FontSize="14" HorizontalAlignment="Right" Content="Time to Strike: " />
+        <TextBox x:Name="PeriodTextBox" Grid.Row="11" Grid.Column="3" VerticalAlignment="Center" FontSize="14" HorizontalAlignment="Stretch"/>
+        <Label x:Name="StrikePriceLabel" Grid.Row="13" Grid.Column="1" VerticalAlignment="Center" FontSize="14" HorizontalAlignment="Right" Content="Strike Pirce: " />
+        <TextBox x:Name="StrikePriceTextBox" Grid.Row="13" Grid.Column="3" VerticalAlignment="Center" FontSize="14" HorizontalAlignment="Stretch"/>
+        <Label x:Name="StepLabel" Grid.Row="15" Grid.Column="1" VerticalAlignment="Center" FontSize="14" HorizontalAlignment="Right" Content="Observations: " />
+        <TextBox x:Name="StepTextBox" Grid.Row="15" Grid.Column="3" VerticalAlignment="Center" FontSize="14" HorizontalAlignment="Stretch"/>
+        <Label x:Name="PathLabel" Grid.Row="17" Grid.Column="1" VerticalAlignment="Center" FontSize="14" HorizontalAlignment="Right" Content="NO. of Path: " />
+        <TextBox x:Name="PathTextBox" Grid.Row="17" Grid.Column="3" VerticalAlignment="Center" FontSize="14" HorizontalAlignment="Stretch"/>
+    
+        <RadioButton x:Name="CallRadioBtn" Grid.Row="19" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content=" Call" FontSize="14" IsChecked="True"/>
+        <RadioButton x:Name="PutRadioBtn" Grid.Row="19" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Content=" Put" FontSize="14"/>
+        
+        <Button x:Name="CalculateBtn" Grid.Row="1" Grid.Column="5" HorizontalAlignment="Stretch" VerticalAlignment="Center" Content="Calculate" FontSize="14" Click="CalculateBtn_Click"/>
+        <TextBox x:Name="AnswerTextBox" Grid.Row="1" Grid.Column="7" VerticalAlignment="Center" FontSize="14" HorizontalAlignment="Stretch"/>
+        <Button x:Name="PlotBtn" Grid.Row="1" Grid.Column="9" HorizontalAlignment="Stretch" VerticalAlignment="Center" Content="Plot" FontSize="14"/>
+    
+        <Canvas x:Name="PlotCanvas" Grid.Row="3" Grid.Column="5" Grid.ColumnSpan="5" Grid.RowSpan="17" Background="WhiteSmoke"/>
+    </Grid>
+</Window>

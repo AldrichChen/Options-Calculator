@@ -1,0 +1,13 @@
+D:\OptionCalculator\OptionCalculator\bin\Debug\OptionCalculator.exe.config
+D:\OptionCalculator\OptionCalculator\bin\Debug\OptionCalculator.exe
+D:\OptionCalculator\OptionCalculator\bin\Debug\OptionCalculator.pdb
+D:\OptionCalculator\OptionCalculator\obj\Debug\OptionCalculator.csprojResolveAssemblyReference.cache
+D:\OptionCalculator\OptionCalculator\obj\Debug\MainWindow.baml
+D:\OptionCalculator\OptionCalculator\obj\Debug\MainWindow.g.cs
+D:\OptionCalculator\OptionCalculator\obj\Debug\App.g.cs
+D:\OptionCalculator\OptionCalculator\obj\Debug\OptionCalculator_MarkupCompile.cache
+D:\OptionCalculator\OptionCalculator\obj\Debug\OptionCalculator.g.resources
+D:\OptionCalculator\OptionCalculator\obj\Debug\OptionCalculator.Properties.Resources.resources
+D:\OptionCalculator\OptionCalculator\obj\Debug\OptionCalculator.csproj.GenerateResource.Cache
+D:\OptionCalculator\OptionCalculator\obj\Debug\OptionCalculator.exe
+D:\OptionCalculator\OptionCalculator\obj\Debug\OptionCalculator.pdb
